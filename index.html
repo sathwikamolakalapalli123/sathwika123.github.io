@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Fashion Store</h1>
+  <p>Traditional Wear Collection</p>
+</header>
+
+<section class="products">
+
+  <div class="product">
+    <img src="images/image1.jpg">
+    <h2>Designer Kurti</h2>
+    <p>₹2,499</p>
+    <button onclick="buyNow('Designer Kurti')">Buy Now</button>
+  </div>
+
+  <div class="product">
+    <img src="images/image2.jpg">
+    <h2>Ethnic Suit</h2>
+    <p>₹3,199</p>
+    <button onclick="buyNow('Ethnic Suit')">Buy Now</button>
+  </div>
+
+  <div class="product">
+    <img src="images/image3.jpg">
+    <h2>Party Wear Anarkali</h2>
+    <p>₹4,599</p>
+    <button onclick="buyNow('Party Wear Anarkali')">Buy Now</button>
+  </div>
+
+</section>
+
+<section id="checkout" class="checkout">
+  <h2>Checkout</h2>
+
+  <form onsubmit="placeOrder(); return false;">
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="Town / Village" required>
+    <input type="text" placeholder="City" required>
+    <input type="text" placeholder="District" required>
+    <input type="text" placeholder="State" required>
+    <input type="number" placeholder="Pincode" required>
+
+    <h3>Payment Method</h3>
+    <label><input type="radio" name="payment" required> Cash on Delivery</label><br>
+    <label><input type="radio" name="payment"> Online Payment</label>
+
+    <button type="submit">Place Order</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Fashion Store</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
